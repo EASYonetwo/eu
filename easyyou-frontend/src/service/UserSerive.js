@@ -1,9 +1,9 @@
 import axios from "axios";
 
-//const USER_API_BASE_URL = 'http://183.101.134.54:8073/api/v1';
-//const USER_API_BASE_URL = 'http://14.54.176.241:8073/api/v1';
+//const USER_API_BASE_URL = 'https://183.101.134.54:8073/api/v1';
+//const USER_API_BASE_URL = 'https://14.54.176.241:8073/api/v1';
 
-const USER_API_BASE_URL = 'https://6d0a-183-101-134-54.ngrok-free.app/api/v1';
+const USER_API_BASE_URL = 'https://localhost:8073/api/v1';
 
 class UserService{
     /* 

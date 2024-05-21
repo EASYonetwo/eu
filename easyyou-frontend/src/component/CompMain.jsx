@@ -17,6 +17,7 @@ const CompMain = () => {
     BoardService.mainReplyBoard().then(res => {
       _setDGarr(res.data.like)
       _setDCarr(res.data.latest)
+      console.log('입력받은 main값 ',res.data.like);
     })
     BoardService.mainFileBoard().then(res => {
       _setFGarr(res.data.like)
@@ -42,13 +43,13 @@ const CompMain = () => {
           <h2>댓글 게시판</h2>
           <div className='board-d-h'>
             {
-              _DGarr.map(v => <CompDHpost data={v} key={v.boardseq} />)
+              _DGarr && _DGarr.map(v => <CompDHpost data={v} key={v.boardseq} />)
             }
           </div>
 
           <div className='board-d-c'>
             {
-              _DCarr.map(v => <CompDNpost data={v} key={v.boardseq} />)
+              _DCarr && _DCarr.map(v => <CompDNpost data={v} key={v.boardseq} />)
             }
           </div>
           
@@ -57,12 +58,12 @@ const CompMain = () => {
           <h2>파일 게시판</h2>
           <div className='board-f-h'>
             {
-              _FGarr.map(v => <CompFHpost data={v} key={v.boardseq} />)
+              _FGarr && _FGarr.map(v => <CompFHpost data={v} key={v.boardseq} />)
             }
           </div>
           <div className='board-f-c'>
             {
-              _FCarr.map(v => <CompFNpost data={v} key={v.boardseq} />)
+              _FCarr && _FCarr.map(v => <CompFNpost data={v} key={v.boardseq} />)
             }
           </div>
         </div>
