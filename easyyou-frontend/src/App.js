@@ -37,7 +37,7 @@ function App() {
   
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <AppContext.Provider value={{ _isLogin, _setIsLogin, _loginId, _setLoginId , _loginAuth, _setLoginAuth }}>
           <CompHeader></CompHeader>
           <Routes>

@@ -3,7 +3,7 @@ import axios from "axios";
 //const USER_API_BASE_URL = 'http://183.101.134.54:8073/api/v1';
 //const USER_API_BASE_URL = 'http://14.54.176.241:8073/api/v1';
 
-const USER_API_BASE_URL = 'http://localhost:8073/api/v1';
+const USER_API_BASE_URL = 'https://6d0a-183-101-134-54.ngrok-free.app/api/v1';
 
 class BoardService{
     //메인화면에서 보이는 게시판의 경우

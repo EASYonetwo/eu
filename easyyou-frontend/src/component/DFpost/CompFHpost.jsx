@@ -22,7 +22,7 @@ const CompFHpost = ({ data }) => {
     <div className='Fpost' onClick={fnClickhandler}>
       <span className='Hot'><FontAwesomeIcon icon={faFire} /></span>
       <p className='Mimg'>
-        {(_form) && (_form === 'jpg' || _form === 'png' || _form === 'jpeg')? <img src={`data:image/${_form};base64,${file}`} alt="" />:<img src='/img/NoPreview.png' alt=''/>}
+        {(_form) && (_form === 'jpg' || _form === 'png' || _form === 'jpeg')? <img src={`data:image/${_form};base64,${file}`} alt="" />:<img src='https://easyonetwo.github.io/eu/img/NoPreview.png' alt=''/>}
       </p>
       <p className='Text'>{title}</p>
       <p className='Person'>{user.id}</p>

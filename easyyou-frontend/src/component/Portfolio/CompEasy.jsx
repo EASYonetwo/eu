@@ -27,10 +27,10 @@ const CompEasy = () => {
       <h2>이지원의 포트폴리오</h2>
       <div>
         <div className='imageZone'>
-          <img src='/img/main2_jiwon.png' alt='' />
-          <img src='/img/thumb1_jiwon.png' alt='' />
-          <img src='/img/thumb2_jiwon.png' alt='' />
-          <img src='/img/thumb3_jiwon.png' alt='' />
+          <img src='https://easyonetwo.github.io/eu/img/main2_jiwon.png' alt='' />
+          <img src='https://easyonetwo.github.io/eu/img/Thumb1_jiwon.png' alt='' />
+          <img src='https://easyonetwo.github.io/eu/img/Thumb2_jiwon.png' alt='' />
+          <img src='https://easyonetwo.github.io/eu/img/Thumb3_jiwon.png' alt='' />
         </div>
         <div className='plusBtn' onClick={checkAuth}>+더보기</div>
         <p>*더 많은 포트폴리오를 보고 싶으시면 로그인 후 이용바랍니다.</p>

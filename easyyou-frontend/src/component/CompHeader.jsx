@@ -6,7 +6,7 @@ import { faSquareCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 const CompHeader = () => {
   const { _isLogin, _setIsLogin, _setLoginId, _loginId } = useContext(AppContext)
-  const location = useLocation()
+  const location = useLocation();
 
   function fnClickHander() {
     document.querySelector(`.Board_main`).classList.toggle('active')
@@ -22,7 +22,7 @@ const CompHeader = () => {
 
   useEffect(() => {
     console.log(location.pathname)
-    if (location.pathname === '/') {
+    if (location.pathname === '/' || location.pathname === '/eu/') {
       document.querySelectorAll('.nav > li > a').forEach(v => { v.classList.remove('active') })
       document.querySelector('.Board_main >span').classList.remove('active')
       document.querySelector('.logo >a').classList.add('active')
