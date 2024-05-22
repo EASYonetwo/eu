@@ -10,6 +10,7 @@ const CompMember = () => {
   function fnIdCheck(e) {
     e.preventDefault();
     UserService.idCheck(_id).then(res => {
+      console.log(res.data)
       return (res.data === 0) ? fnAvailableId() : fnOverlapId()
     })
   }

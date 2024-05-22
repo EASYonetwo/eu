@@ -17,7 +17,6 @@ const CompMain = () => {
     BoardService.mainReplyBoard().then(res => {
       _setDGarr(res.data.like)
       _setDCarr(res.data.latest)
-      console.log('입력받은 main값 ',res.data.like);
     })
     BoardService.mainFileBoard().then(res => {
       _setFGarr(res.data.like)
